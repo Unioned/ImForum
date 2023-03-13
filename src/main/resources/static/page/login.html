@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ch">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
+  <title>Bootstrap 实例</title>
+  <meta charset="utf-8  ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--viewport用户可以缩放页面
+      width指定视区逻辑宽度
+      device-width指示视区宽度应该为设备的屏幕宽度
+      initial-scale指令用于设置web页面初始缩放比例
+        initial-scale = 1则将显示未经缩放的web文档
+      -->
+  <title>Bootstrap demo</title>
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <script src="../js/bootstrap.js"></script>
 <body>
-$END$
+  <div class="container-fluid" style="background: antiquewhite;height: calc(100vh)"><!--响应式固定宽度布局 class="container-fluid" 为全部宽度-->
+
+    <div class="position-absolute top-50 start-50 translate-middle" style="width: 50%;">
+      <div>
+        <img src="../image/title.png" alt="title" style="width: 30%;height: 10%;margin-left: 35%;">
+      </div>
+      <div style="background: azure;margin-top: 5%;width: 100%;border-radius: 20px">
+        <form>
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="form-floating mt-3 mb-3 col-sm-6">
+              <input type="email" class="form-control" id="floatingInput" placeholder="E">
+              <label for="floatingInput">&nbsp;&nbsp;Email address</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="form-floating mb-3 col-sm-6">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="P">
+              <label for="floatingPassword">&nbsp;&nbsp;Password</label>
+            </div>
+          </div>
+
+          <div style="width: 25%;margin-left: 45%">
+            <button class="btn btn-primary" type="submit">登录</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
